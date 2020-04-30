@@ -1,0 +1,27 @@
+Pipeline{
+    agent any
+    stages {
+            stage('Entering jenkins file') {
+            steps {
+                echo 'first step '
+                  }
+        }
+        /*stage('create json') {
+            steps {
+                echo 'creating json'
+                Script{
+                def someMap = [
+                                'name' : "john",
+                                'surname' : "doe"
+                              ]
+                def json = new groovy.json.JsonBuilder()
+                json "people": someMap
+                def file = new File("$WORKSPACE/people.json")
+                file.write(groovy.json.JsonOutput.prettyPrint(json.toString()))
+
+                }
+                
+            }
+        }*/
+    }
+}
