@@ -10,7 +10,7 @@ pipeline{
         stage('two')
         {
             steps{
-                echo 'two'
+                echo 'two and two'
             }
         }
         
