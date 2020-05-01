@@ -13,6 +13,12 @@ pipeline{
                 echo 'two and two'
             }
         }
+        stage('three')
+        {
+            steps{
+                load "second.groovy"
+            }
+        }
         
     }
     
