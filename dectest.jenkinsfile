@@ -16,7 +16,7 @@ pipeline{
         stage('three')
         {
             steps{
-                load "second.groovy"
+                build 'testsecondscript'
             }
         }
         
